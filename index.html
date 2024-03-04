@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css" type="text/css">
+    <title>RTMM by CDR Systems</title>
+</head>
+<body>
+
+<script src="./js/login.js"></script>
+
+
+<header>
+    <div id="header_logo_wrapper">
+        <img id="header_logo" src="./resources/CDR Logo NT.png">
+    </div>
+    <div id="header_menu">
+        <div class="menuItem active" id="about_rtmm" onclick= "goHome()">
+            <p>About RTMM</p>
+            <div class="underlineMenu"></div>
+        </div>
+        <div class="menuItem" id="testing_process" onclick="goTesting()">
+            <p>Testing Process</p>
+            <div class="underlineMenu"></div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="banner" id="home_top_banner">
+        <div id="home_banner_logo_wrapper">
+            <img src="./resources/RTMM_Logo_Text_White.png">
+        </div>
+    </div>
+    <div class="banner homeDescriptionBanner" id="home_description_banner">
+        <div class="maxWidth">
+            <h2 class="">Real time motion management<br>for frameless stereotactic radiosurgery</h2>
+            <p>RTMM manages and corrects the patients’ movements in a real time and non-invasive manner. The finely
+                precise positioning accuracy enables the highest levels of dosimetry without compromising on patient
+                comfort. These real time corrections enhance significantly the timeliness and efficiency of treatment
+                delivery. With this advanced technology, treatment accuracy is now fully compatible with patient comfort
+                and procedure timeliness.</p>
+        </div>
+    </div>
+    <div id="keypoint_links">
+        <div class="keypointLink" id="efficiency_link">
+            <img src="./resources/efficiency.png">
+            <h4>Efficiency</h4>
+        </div>
+        <div class="keypointLink keypointMiddleLink" id="comfort_link">
+            <img src="./resources/comfort.png">
+            <h4>Comfort</h4>
+        </div>
+        <div class="keypointLink" id="compatibility_link">
+            <img src="./resources/compatibility.png">
+            <h4>Compatibility</h4>
+        </div>
+    </div>
+    <div id="keypoints_section">
+        <div class="keyPointCard">
+            <div class="cardContent">
+                <div class="KPCardHeader" id="efficiency_card">
+                    <img src="./resources/efficiency.png">
+                    <h4>Efficiency</h4>
+                </div>
+                <div class="KPCMain">
+                    <h3 class="KPCardSubHeader">Real time adjustments to maintain patient position</h3>
+                    <p>
+                        Make the most out of your movement tracking data, add the component that corrects it
+                        instantaneously.<br> CDR System knows how valuable time is for patients and therapists. With an
+                        automated and immediate patient repositioning technology, treatments can, now, be uninterrupted,
+                        faster and more efficient. With RTMM, the timeliness of treatment processes stops depending on
+                        patient immobilization.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="keyPointCard" id="middle_card">
+            <div class="cardContent">
+                <div class="KPCardHeader">
+                    <img src="./resources/comfort.png">
+                    <h4>Comfort</h4>
+                </div>
+                <div class="KPCMain">
+                    <h3 class="KPCardSubHeader">Advanced technology devoted to patient comfort</h3>
+                    <p>
+                        Patients know how critical treatment accuracy and precision are. The undeniable reliance on
+                        their own immobility is therefore source of great stress and anxiety. Providing them with a
+                        system that manages and corrects their movements proves to be tremendously reassuring.<br>
+                        In addition to reducing stress, RTMM helps patients feel comfortable throughout the treatment.
+                        With a noninvasive solution and a much freer patient, sensations of restraint turn into feelings
+                        of care.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="keyPointCard">
+            <div class="cardContent" id="compatibility_card">
+                <div class="KPCardHeader">
+                    <img src="./resources/compatibility.png">
+                    <h4>Compatibility</h4>
+                </div>
+                <div class="KPCMain">
+                    <h3 class="KPCardSubHeader">A solution that fits into your existing workflow</h3>
+                    <p>
+                        Designed to be easily installed, RTMM is light weight, compact and compatible with your current
+                        benches set up and dedicated spaces. Thanks to an Ease-of-Use focused development, the
+                        day-to-day usage of the solution is intuitive and connects to your OSC systems. Its
+                        compatibility with your current devices and workflows makes it the solution that fits your
+                        current needs.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="testing_section">
+        <div id="testing_bloc_content">
+            <h2>RTMM testing process<br>and results</h2>
+            <div id="testing_bloc_button" class="button" onclick="goTesting()">
+                <p>Learn More</p>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div id="color_div"></div>
+    <div id="footer_content">
+        <div id="RTMM_footer_logo_wrapper" class="footerCol">
+            <img src="./resources/RTMMLogo_beige.png">
+        </div>
+        <div class="footerCol">
+            <a>info@cdrsystems.com</a>
+        </div>
+        <div id="CDR_footer_logo_wrapper" class="footerCol">
+            <img src="./resources/CDR Logo NT.png">
+        </div>
+    </div>
+</footer>
+
+<script src="./js/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css" type="text/css">
+    <link rel="stylesheet" href="./css/testing.css" type="text/css">
+    <title>RTMM by CDR Systems</title>
+</head>
+<body>
+
+<script src="./js/login.js"></script>
+
+<header>
+    <div id="header_logo_wrapper">
+        <img id="header_logo" src="./resources/CDR Logo NT.png">
+    </div>
+    <div id="header_menu">
+        <div class="menuItem" id="about_rtmm" onclick="goHome()">
+            <p>About RTMM</p>
+            <div class="underlineMenu"></div>
+        </div>
+        <div class="menuItem active" id="testing_process" onclick="goTesting()">
+            <p>Testing Process</p>
+            <div class="underlineMenu"></div>
+        </div>
+    </div>
+</header>
+
+<div id="testing_section">
+    <div id="testing_bloc_content">
+        <h2>RTMM testing process<br>and results</h2>
+    </div>
+</div>
+<div id="test_steps_links">
+    <div class="testStepLink" id="link1">
+        <div class="testStepLinkNo">
+            <p>1</p>
+        </div>
+        <div class="testStepTitle">
+            <h4>Validate Motion Accuracy</h4>
+        </div>
+    </div>
+    <div class="testStepLink" id="link2">
+        <div class="testStepLinkNo">
+            <p>2</p>
+        </div>
+        <div class="testStepTitle">
+            <h4>Validate Motion Correction Accuracy</h4>
+        </div>
+    </div>
+    <div class="testStepLink" id="link3">
+        <div class="testStepLinkNo">
+            <p>3</p>
+        </div>
+        <div class="testStepTitle">
+            <h4>Evaluate Domestic Impact</h4>
+        </div>
+    </div>
+</div>
+<main>
+    <div id="main_content">
+        <div id="main_content_wrapper">
+
+            <div class="stepTitleBloc" id="first_step_title_bloc">
+                <div class="stepTitleDiv">
+                    <div id="top_bloc_img_wrapper">
+                        <img src="./resources/TestingRTMM.jpg">
+                    </div>
+                </div>
+                <div class="stepTitleDiv">
+                    <div class="stepTitleCenter">1</div>
+                    <div class="stepTitleSide">
+                        <h2>Validate Motion Accuracy</h2>
+                        <h5>Do RTMM moves match instructions?</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="stepContentBloc" id="step_content_bloc1">
+                <div class="stepContentSide">
+                    <div class="stepsTitle">
+                        <h5>Steps</h5>
+                    </div>
+                    <div class="stepsDescription">
+                        <h5>Initial Phantom Positioning</h5>
+                        <p>The CDR phantom head was placed on the platform. It was centered using the OBI and Varian
+                            couch. Its position was captured with AllignRT.
+                        </p>
+                        <h5>Introducing Displacements</h5>
+                        <p>Translational and rotational displacements were introduced using the CDR RTMM technology.
+                            They were performed for 3 translation and 3 rotations over a range of 3-30 mm and 0.5-5 degree.
+                        </p>
+                        <h5>Measuring Displacements</h5>
+                        <p>The displacements were measured using AllignRT. For each position, the displacement and
+                            measurement test was repeated three times.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="stepContentCenter"></div>
+                <div class="stepContentSide">
+                    <div class="spacerResults"></div>
+                    <div class="resultsTitle">
+                        <h5>Results</h5>
+                    </div>
+                    <div class="resultsDescription">
+                        <p>Average positioning residual error was 0.04 mm with a range of [-0.4, 0.3]mm / [-0.2/0.1]°
+                        </p>
+                    </div>
+                    <div class="resultsShowcaseWrapper">
+                        <div class="resultsImgWrapper">
+                            <img src="./resources/positioningAccuracy.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="stepTitleBloc" id="second_step_title_bloc">
+                <div class="stepTitleSide"></div>
+                <div class="stepTitleCenter">2</div>
+                <div class="stepTitleSide">
+                    <h2>VALIDATE MOTION CORRECTION ACCURACY</h2>
+                    <h5>Do RTMM moves match instructions based on CBCT data?</h5>
+                </div>
+            </div>
+            <div class="stepContentBloc" id="step_content_bloc2">
+                <div class="stepContentSide">
+                    <div class="stepsTitle">
+                        <h5>Steps</h5>
+                    </div>
+                    <div class="stepsDescription">
+                        <h5>Initial Phantom Positioning</h5>
+                        <p>The CDR phantom head was placed on the platform. It was centered using the Varian couch.
+                        </p>
+                        <h5>Introducing Displacements</h5>
+                        <p>Translational and rotational displacements were introduced using the Varian couch.
+                        </p>
+                        <h5>Measuring Displacements</h5>
+                        <p>Measured using CBCT 3D-3D auto registration to acquire the shift values.
+                        </p>
+                        <h5>Correcting with RTMM Technology</h5>
+                        <p>Use of the CDR RTMM technology to correct the measured displacements.
+                        </p>
+                        <h5>Residual Displacements</h5>
+                        <p>Residual displacements measured using a second CBCT and getting the shift values from the
+                            3D-3D auto-registration.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="stepContentCenter"></div>
+                <div class="stepContentSide">
+                    <div class="spacerResults"></div>
+                    <div class="resultsTitle">
+                        <h5>Results</h5>
+                    </div>
+                    <div class="resultsDescription">
+                        <p>A total of 74 residual displacements. Their standard deviations were 0.1mm and 0.04 °.
+                            These results show a very high accuracy with numbers comparable to the Varian’s
+                            PitchPerfect system
+                        </p>
+                    </div>
+                    <div class="resultsShowcaseWrapper">
+                        <div class="resultsImgWrapper">
+                            <img src="./resources/ResidualDisplacement.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stepTitleBloc" id="third_step_title_bloc">
+                <div class="stepTitleSide"></div>
+                <div class="stepTitleCenter">3</div>
+                <div class="stepTitleSide">
+                    <h2>EVALUATE DOSIMETRIC IMPACT</h2>
+                    <h5>How do RTMM corrections impact the dosimetry levels?</h5>
+                </div>
+            </div>
+            <div class="stepContentBloc" id="step_content_bloc3">
+                <div class="stepContentSide">
+                    <div class="stepsTitle">
+                        <h5>Steps</h5>
+                    </div>
+                    <div class="stepsDescription">
+                        <h5>Initial Phantom Positioning</h5>
+                        <p>The CDR phantom head was placed on the platform. It was centered using the OBI and Varian
+                            couch. Its position was captured with AllignRT.
+                        </p>
+                        <h5>Introducing Displacements</h5>
+                        <p>Simultaneous translational and rotational displacements were introduced using the Varian couch
+                        </p>
+                        <h5>Measuring Displacements</h5>
+                        <p>The offsets were measured using align RT.
+                        </p>
+                        <h5>Correcting with RTMM Technology</h5>
+                        <p>Use of the CDR RTMM technology to correct the measured displacements.
+                        </p>
+                        <h5>Treatment Delivery</h5>
+                        <p>The dosimetry was evaluated using a single-iso, two target treatment plan to have a higher
+                            sensitivity for any residual rotational displacements, and with four couch positions.
+                            The displacement and correction process was repeated for each of the four couch kicks.
+                            The scintillator point doses were compared with the expected values from the treatment
+                            planning system, and the composite film dosimetry in RIT was evaluated against the
+                            expected dose profiles.
+
+                        </p>
+
+                    </div>
+                </div>
+                <div class="stepContentCenter"></div>
+                <div class="stepContentSide">
+                    <div class="spacerResults"></div>
+                    <div class="resultsTitle">
+                        <h5>Results</h5>
+                    </div>
+                    <div class="resultsDescription">
+                        <p>The dose differences were under 3% for each of the arcs, and within 1.5% for the composite plan.
+                        </p>
+                    </div>
+                    <div class="resultsShowcaseWrapper">
+                        <div class="resultsImgWrapper">
+                            <img src="./resources/Dosimetry1.png">
+                        </div>
+                    </div>
+                    <div class="resultsShowcaseWrapper">
+                        <div class="resultsImgWrapper">
+                            <img src="./resources/Dosimetry3.png">
+                        </div>
+                    </div>
+                    <div class="resultsShowcaseWrapper">
+                        <div class="resultsImgWrapper">
+                            <img src="./resources/Dosimetry2.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="extra_right"></div>
+</main>
+
+
+<footer>
+    <div id="color_div"></div>
+    <div id="footer_content">
+        <div id="RTMM_footer_logo_wrapper" class="footerCol">
+            <img src="./resources/RTMMLogo_beige.png">
+        </div>
+        <div class="footerCol">
+            <a>info@cdrsystems.com</a>
+        </div>
+        <div id="CDR_footer_logo_wrapper" class="footerCol">
+            <img src="./resources/CDR Logo NT.png">
+        </div>
+    </div>
+</footer>
+
+<script src="./js/testing.js"></script>
+</body>
+</html>
